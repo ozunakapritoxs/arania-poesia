@@ -9,6 +9,11 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
+
+  background-image: url("background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #spider {
@@ -57,3 +62,4 @@ body {
   to   { background-position-x: -288px; }
 
 }
+
