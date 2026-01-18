@@ -2,6 +2,10 @@ body {
   margin: 0;
   background-color: #0b0b0b;
   overflow: hidden;
+  background-image: url("background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   
 
 #scene {
@@ -56,6 +60,7 @@ body {
   to   { background-position-x: -288px; }
 
 }
+
 
 
 
