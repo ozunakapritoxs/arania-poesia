@@ -15,7 +15,7 @@ body {
   width: 32px;
   height: 32px;
 
-  background-image: url("../img/spider.png");
+  background-image: url("Spider.png");
   background-repeat: no-repeat;
 
   position: absolute;
@@ -55,4 +55,5 @@ body {
 @keyframes eventB {
   from { background-position-x: 0px; }
   to   { background-position-x: -288px; }
+
 }
