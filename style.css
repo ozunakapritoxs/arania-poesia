@@ -2,10 +2,11 @@ body {
   margin: 0;
   background-color: #0b0b0b;
   overflow: hidden;
-  background-image: url("background.jpeg");
+ /* background-image: url("background.jpeg");
   background-size: cover;        /* que cubra toda la pantalla */
-  background-position: center;   /* centrada */
-  background-repeat: no-repeat;
+ /* background-position: center;   /* centrada */
+  /*background-repeat: no-repeat;*/
+  
 }
 
 #scene {
@@ -60,6 +61,7 @@ body {
   to   { background-position-x: -288px; }
 
 }
+
 
 
 
