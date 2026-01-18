@@ -1,3 +1,5 @@
+const scene = document.getElementById("scene");
+
 const spider = document.getElementById("spider");
 
 const SCALE = 3;
@@ -44,8 +46,8 @@ function loop() {
 /* === MOVIMIENTO Y BORDES === */
 
 function handleEdges() {
-  const w = window.innerWidth;
-  const h = window.innerHeight;
+  const w = scene.clientWidth;
+  const h = scene.clientHeight;
 
   if (x < -SIZE || x > w || y < -SIZE || y > h) {
     teleport();
@@ -54,31 +56,29 @@ function handleEdges() {
 
 function teleport() {
   const side = Math.floor(Math.random() * 4);
+  const w = scene.clientWidth;
+  const h = scene.clientHeight;
 
-  if (side === 0) { // izquierda
+  if (side === 0) {
     x = -SIZE;
-    y = Math.random() * window.innerHeight;
+    y = Math.random() * h;
     dirX = 1; dirY = 0;
-  } else if (side === 1) { // derecha
-    x = window.innerWidth;
-    y = Math.random() * window.innerHeight;
+  } else if (side === 1) {
+    x = w;
+    y = Math.random() * h;
     dirX = -1; dirY = 0;
-  } else if (side === 2) { // arriba
-  x = Math.random() * window.innerWidth;
-  y = -SIZE;
-  dirX = 0;
-  dirY = 1;
-}
-else { // abajo
-  x = Math.random() * window.innerWidth;
-  y = window.innerHeight;
-  dirX = 0;
-  dirY = -1;
-}
+  } else if (side === 2) {
+    x = Math.random() * w;
+    y = -SIZE;
+    dirX = 0; dirY = 1;
+  } else {
+    x = Math.random() * w;
+    y = h;
+    dirX = 0; dirY = -1;
+  }
 
   updateTransform();
 }
-
 /* === ORIENTACIÓN === */
 
 function updateTransform() {
@@ -140,3 +140,4 @@ function triggerRandomEvent() {
     isPlayingEvent = false;
   }, 900);
 }
+
