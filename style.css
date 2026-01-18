@@ -18,7 +18,7 @@ body {
   width: 32px;
   height: 32px;
 
-  background-image: url("../img/spider.png");
+  background-image: url("spider.png");
   background-repeat: no-repeat;
 
   position: absolute;
@@ -60,4 +60,5 @@ body {
   to   { background-position-x: -288px; }
 
 }
+
 
