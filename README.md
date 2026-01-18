@@ -7,3 +7,5 @@ Animación inspirada en el poema "La araña" de Julio Flórez.
 🌐 Proyecto web estático
 
 Hecho con HTML, CSS y JavaScript.
+
+https://ciudadseva.com/texto/la-arana/
