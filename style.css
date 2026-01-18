@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background-color: #0b0b0b;
-  filter: brightness(0.9) contrast(1.1);
   overflow: hidden;
   background-image: url("background.jpg");
   background-size: cover;        /* que cubra toda la pantalla */
@@ -59,4 +58,5 @@ body {
 @keyframes eventB {
   from { background-position-x: 0px; }
   to   { background-position-x: -288px; }
+
 }
